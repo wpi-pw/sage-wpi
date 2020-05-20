@@ -6,5 +6,8 @@
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
     </nav>
+    @hasfield('enable_social_sharing')
+      <a href="#">Social Links</a>
+    @endfield
   </div>
 </header>
